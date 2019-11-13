@@ -1,0 +1,57 @@
+.navigation {
+  @include pos(fixed, $t: 0, $l: 0, $z: 99);
+  width: 100%;
+  background: var(--black);
+  overflow: hidden;
+  transition: all 0.3s;
+
+  &__menu {
+    @include pos(fixed, $t: 15px, $r: 3%, $z: 99);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    transition: all 0.3s;
+  }
+
+  &__input {
+    display: none;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    font: 14px $merri;
+    margin: 0 70px;
+    text-align: center;
+  }
+  &__link {
+    text-decoration: none;
+    color: var(--grey);
+    position: relative;
+    padding: 31px 0;
+    display: inline-block;
+    transition: all 0.3s;
+
+    &::before {
+      @include size(100%, 1px);
+      @include pos($b: -40px, $l: 0);
+      content: "";
+      background: var(--grey);
+      transition: all 0.3s;
+    }
+    &:hover {
+      color: var(--grey);
+      &::before {
+        bottom: 30px;
+      }
+    }
+    &:active {
+      color: #fff;
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/modules/five.scss"
+    ],
+    "names": [],
+    "file": "five.min.css"
+}

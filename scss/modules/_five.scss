@@ -1,0 +1,29 @@
+.wrapper__five {
+  background: url(../images/frame5-bg.png) no-repeat;
+  background-size: cover;
+  width: 100vw;
+}
+
+.help {
+  color: #fff;
+
+  &__title {
+    font: 400 48px/55px $yeseva;
+    margin: 165px 0 20px;
+  }
+  &__text {
+    width: 90%;
+    font: 400 16px/20px $merri;
+
+    &-first {
+      margin-bottom: 20px;
+    }
+    &-last {
+      margin-bottom: 70px;
+    }
+  }
+  &__petition {
+    font: 400 30px/35px $yeseva;
+    margin-bottom: 55px;
+  }
+}

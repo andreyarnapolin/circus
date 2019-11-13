@@ -1,0 +1,102 @@
+.main {
+  &__circle {
+    &-left {
+      width: 216px;
+      height: 308px;
+      top: 40px;
+      left: 0;
+    }
+
+    &-right {
+      width: 244px;
+      height: 376px;
+      bottom: -70px;
+      right: -85px;
+    }
+  }
+}
+
+.backstage {
+  &__circle {
+    &-left {
+      width: 180px;
+      height: 148px;
+      bottom: 15px;
+      left: 0;
+    }
+
+    &-right {
+      width: 230px;
+      height: 352px;
+      top: -30px;
+      right: -55px;
+    }
+  }
+}
+
+.more {
+  &__circle {
+    &-left {
+      width: 186px;
+      height: 109px;
+      top: 105px;
+      left: 35px;
+    }
+
+    &-right {
+      width: 329px;
+      height: 189px;
+      bottom: -60px;
+      right: -75px;
+    }
+  }
+}
+
+.animal {
+  &__circle {
+    &-left {
+      width: 189px;
+      height: 129px;
+      bottom: 10px;
+      left: 15px;
+    }
+
+    &-right {
+      width: 230px;
+      height: 369px;
+      top: -25px;
+      right: -60px;
+    }
+  }
+}
+
+.help {
+  &__circle {
+    &-left {
+      width: 150px;
+      height: 152px;
+      top: 100px;
+      left: 15px;
+    }
+
+    &-right {
+      width: 232px;
+      height: 248px;
+      bottom: -15px;
+      right: 5px;
+    }
+  }
+}
+
+.circle {
+  &__left {
+    position: absolute;
+    display: none;
+  }
+
+  &__right {
+    position: absolute;
+    z-index: 2;
+    display: none;
+  }
+}

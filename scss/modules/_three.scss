@@ -1,0 +1,57 @@
+.wrapper__three {
+  background: var(--red);
+  background-size: auto 100vh;
+  padding-top: 115px;
+}
+
+.more {
+  color: #fff;
+
+  &__block {
+    text-align: center;
+  }
+
+  &__title {
+    font: 400 48px/55px $yeseva;
+    margin-bottom: 45px;
+  }
+
+  &__text {
+    font: 400 16px/20px $merri;
+    margin-bottom: 40px;
+
+    &--right {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      text-align: end;
+      width: 85%;
+      padding-right: 15px;
+    }
+  }
+
+  &__image {
+    position: relative;
+
+    &--center {
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      max-width: none;
+    }
+
+    &--right {
+      margin-top: 20px;
+      z-index: 1;
+    }
+
+    &--wrap {
+      &-left {
+        margin-right: -15%;
+      }
+      &-right {
+        margin-left: -11%;
+      }
+    }
+  }
+}
