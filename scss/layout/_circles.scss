@@ -91,12 +91,10 @@
 .circle {
   &__left {
     position: absolute;
-    display: none;
   }
 
   &__right {
     position: absolute;
     z-index: 2;
-    display: none;
   }
 }
