@@ -3,6 +3,10 @@
   background-size: auto 100vh;
   width: 100vw;
   padding-top: 115px;
+
+  @media (max-width: $mobile) {
+    padding-top: 45px;
+  }
 }
 
 .backstage {
@@ -15,23 +19,44 @@
   &__title {
     font: 400 48px/55px $yeseva;
     margin-bottom: 45px;
+
+    @media (max-width: $mobile) {
+      width: 50%;
+      margin: 0 auto 40px auto;
+      font: 400 24px/28px $yeseva;
+    }
   }
 
   &__text {
     font: 400 16px/20px $merri;
     margin-bottom: 20px;
+
+    @media (max-width: $mobile) {
+      font: 400 14px/18px $merri;
+      margin-bottom: 40px;
+    }
   }
 
   &__images {
     display: flex;
     justify-content: flex-end;
+
+    @media (max-width: $mobile) {
+      justify-content: center;
+    }
   }
 
   &__wall {
     width: 665px;
-    height: 415px;
+    height: 414px;
     position: relative;
     right: 0;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 45px;
+      width: 298px;
+      height: 835px;
+    }
   }
 
   &__image {
@@ -40,23 +65,57 @@
       top: 0;
       left: 0;
       z-index: 3;
+
+      @media (max-width: $mobile) {
+        width: 256px;
+        height: 213px;
+        z-index: 1;
+      }
     }
 
     &--center {
       top: 90px;
       left: 205px;
       z-index: 2;
+
+      @media (max-width: $mobile) {
+        width: 256px;
+        height: 217px;
+        top: auto;
+        left: auto;
+        right: 0;
+        bottom: 0;
+      }
     }
 
     &--right {
       z-index: 3;
       right: 0;
+
+      @media (max-width: $mobile) {
+        width: 256px;
+        height: 360px;
+        right: auto;
+        left: 0;
+        top: 291px;
+        z-index: 1;
+      }
     }
 
     &--bottom {
       bottom: 0;
       left: 0;
       z-index: 1;
+
+      @media (max-width: $mobile) {
+        width: 204px;
+        height: 145px;
+        bottom: auto;
+        left: auto;
+        right: 0;
+        top: 178px;
+        z-index: 2;
+      }
     }
   }
 }

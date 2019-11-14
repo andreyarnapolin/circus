@@ -2,18 +2,40 @@
   background: url(../images/frame5-bg.png) no-repeat;
   background-size: cover;
   width: 100vw;
+
+  @media (max-width: $mobile) {
+    padding-top: 45px;
+    background: var(--red);
+  }
 }
 
 .help {
   color: #fff;
 
+  &__info {
+    @media (max-width: $mobile) {
+      margin-bottom: 55px;
+    }
+  }
+
   &__title {
     font: 400 48px/55px $yeseva;
     margin: 165px 0 20px;
+
+    @media (max-width: $mobile) {
+      margin: 0 auto 30px auto;
+      font: 400 24px/28px $yeseva;
+      text-align: center;
+    }
   }
   &__text {
     width: 90%;
     font: 400 16px/20px $merri;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      font: 400 14px/18px $merri;
+    }
 
     &-first {
       margin-bottom: 20px;
@@ -25,5 +47,16 @@
   &__petition {
     font: 400 30px/35px $yeseva;
     margin-bottom: 55px;
+
+    @media (max-width: $mobile) {
+      font: 400 18px/21px $yeseva;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__socials {
+    @media (max-width: $mobile) {
+      display: none;
+    }
   }
 }

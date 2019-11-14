@@ -5,6 +5,12 @@
       height: 308px;
       top: 40px;
       left: 0;
+      @media (max-width: $mobile) {
+        width: 179px;
+        height: 255px;
+        top: -98px;
+        left: -71px;
+      }
     }
 
     &-right {
@@ -12,6 +18,12 @@
       height: 376px;
       bottom: -70px;
       right: -85px;
+      @media (max-width: $mobile) {
+        width: 140px;
+        height: 215px;
+        bottom: -30px;
+        right: -20px;
+      }
     }
   }
 }
@@ -23,6 +35,12 @@
       height: 148px;
       bottom: 15px;
       left: 0;
+      @media (max-width: $mobile) {
+        width: 151px;
+        height: 142px;
+        left: -60px;
+        top: 0;
+      }
     }
 
     &-right {
@@ -30,6 +48,14 @@
       height: 352px;
       top: -30px;
       right: -55px;
+
+      @media (max-width: $mobile) {
+        width: 125px;
+        height: 191px;
+        top: auto;
+        bottom: -90px;
+        right: -45px;
+      }
     }
   }
 }
@@ -41,6 +67,12 @@
       height: 109px;
       top: 105px;
       left: 35px;
+      @media (max-width: $mobile) {
+        width: 186px;
+        height: 109px;
+        top: -30px;
+        left: -30px;
+      }
     }
 
     &-right {
@@ -48,6 +80,12 @@
       height: 189px;
       bottom: -60px;
       right: -75px;
+      @media (max-width: $mobile) {
+        width: 149px;
+        height: 85px;
+        bottom: -45px;
+        right: -5px;
+      }
     }
   }
 }
@@ -59,6 +97,13 @@
       height: 129px;
       bottom: 10px;
       left: 15px;
+      @media (max-width: $mobile) {
+        width: 95px;
+        height: 77px;
+        bottom: auto;
+        top: 2px;
+        left: -28px;
+      }
     }
 
     &-right {
@@ -66,6 +111,13 @@
       height: 369px;
       top: -25px;
       right: -60px;
+      @media (max-width: $mobile) {
+        width: 81px;
+        height: 130px;
+        top: auto;
+        right: -22px;
+        bottom: -83px;
+      }
     }
   }
 }
@@ -77,6 +129,12 @@
       height: 152px;
       top: 100px;
       left: 15px;
+      @media (max-width: $mobile) {
+        width: 76px;
+        height: 77px;
+        top: 23px;
+        left: -18px;
+      }
     }
 
     &-right {
@@ -84,6 +142,12 @@
       height: 248px;
       bottom: -15px;
       right: 5px;
+      @media (max-width: $mobile) {
+        width: 66px;
+        height: 70px;
+        bottom: 0;
+        right: -5px;
+      }
     }
   }
 }
@@ -91,10 +155,12 @@
 .circle {
   &__left {
     position: absolute;
+    overflow: hidden;
   }
 
   &__right {
     position: absolute;
-    z-index: 2;
+    overflow: hidden;
+    z-index: 10;
   }
 }

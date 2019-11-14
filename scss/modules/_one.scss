@@ -3,27 +3,50 @@
   background-size: auto 100vh;
   width: 100vw;
   background-position: -60px 60px;
+
+  @media (max-width: $desktop) {
+    background: var(--red);
+    background-position: 0 0;
+  }
 }
 
 .main {
   color: #fff;
   &__socials {
-    display: flex;
-    align-items: flex-end;
+    //display: flex;
+    //align-items: flex-end;
     position: absolute;
     bottom: 50px;
     font: 400 16px/20px $merri;
+
+    @media (max-width: $mobile) {
+      bottom: 8px;
+      font: 400 14px/18px $merri;
+    }
   }
 
   &__info {
     margin-right: -40px;
     position: relative;
     z-index: 99;
+    @media (max-width: $mobile) {
+      margin-right: 0;
+    }
+
     &-phone {
       &--number {
         text-decoration: none;
         color: currentColor;
       }
+    }
+  }
+
+  &__icons {
+    @media (max-width: $mobile) {
+      margin-top: 10px;
+      display: inline-flex;
+      justify-content: flex-end;
+      bottom: auto;
     }
   }
 
@@ -33,6 +56,11 @@
     @include size(30px, 30px);
     left: 215px;
     transition: all 0.3s;
+
+    @media (max-width: $mobile) {
+      @include size(19px, 19px);
+      left: auto;
+    }
 
     &:hover {
       fill: var(--grey);
@@ -44,6 +72,12 @@
     @include size(30px, 30px);
     left: 265px;
     transition: all 0.3s;
+
+    @media (max-width: $mobile) {
+      @include size(19px, 19px);
+      left: auto;
+      margin-left: 16px;
+    }
 
     &:hover {
       fill: var(--grey);
@@ -62,11 +96,24 @@
     &-title {
       font: 400 48px/55px $yeseva;
       margin-right: -20%;
+
+      @media (max-width: $mobile) {
+        align-self: flex-start;
+        font: 400 24px/28px $yeseva;
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
     }
     &-text {
       align-self: flex-start;
       width: 80%;
       font: 400 16px/20px $merri;
+
+      @media (max-width: $mobile) {
+        font: 400 14px/18px $merri;
+        width: 90%;
+      }
     }
   }
 }

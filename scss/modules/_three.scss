@@ -2,6 +2,10 @@
   background: var(--red);
   background-size: auto 100vh;
   padding-top: 115px;
+
+  @media (max-width: $mobile) {
+    padding-top: 45px;
+  }
 }
 
 .more {
@@ -14,11 +18,21 @@
   &__title {
     font: 400 48px/55px $yeseva;
     margin-bottom: 45px;
+
+    @media (max-width: $mobile) {
+      width: 50%;
+      margin: 0 auto 40px auto;
+      font: 400 24px/28px $yeseva;
+    }
   }
 
   &__text {
     font: 400 16px/20px $merri;
     margin-bottom: 40px;
+
+    @media (max-width: $mobile) {
+      font: 400 14px/18px $merri;
+    }
 
     &--right {
       position: absolute;
@@ -27,30 +41,64 @@
       text-align: end;
       width: 85%;
       padding-right: 15px;
+
+      @media (max-width: $mobile) {
+        display: none;
+      }
     }
   }
 
   &__image {
     position: relative;
 
+    &--left {
+      @media (max-width: $mobile) {
+        width: 262px;
+        height: 152px;
+      }
+    }
+
     &--center {
       left: 50%;
       transform: translateX(-50%);
       z-index: 2;
       max-width: none;
+
+      @media (max-width: $mobile) {
+        width: 242px;
+        height: 295px;
+        max-width: auto;
+        top: -30px;
+      }
     }
 
     &--right {
       margin-top: 20px;
       z-index: 1;
+
+      @media (max-width: $mobile) {
+        width: 260px;
+        height: 163px;
+        top: -50px;
+        margin-top: 0%;
+        z-index: 3;
+      }
     }
 
     &--wrap {
       &-left {
         margin-right: -15%;
+
+        @media (max-width: $mobile) {
+          margin-right: 0;
+        }
       }
       &-right {
         margin-left: -11%;
+
+        @media (max-width: $mobile) {
+          margin-left: 0;
+        }
       }
     }
   }

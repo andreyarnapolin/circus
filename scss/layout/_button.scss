@@ -4,4 +4,22 @@
   background: var(--red);
   font: 400 18px/21px $yeseva;
   text-decoration: none;
+
+  @media (max-width: $desktop) {
+    padding: 17px 75px;
+    color: #000;
+    background: #fff;
+  }
+
+  &:hover {
+    border: 1px solid #fff;
+
+    @media (max-width: $desktop) {
+      border: none;
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: 55px;
+    }
+  }
 }

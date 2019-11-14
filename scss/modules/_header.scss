@@ -1,3 +1,9 @@
+header {
+  @media (max-width: $desktop) {
+    display: none;
+  }
+}
+
 .navigation {
   @include pos(fixed, $t: 0, $l: 0, $z: 99);
   width: 100%;
