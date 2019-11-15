@@ -35,9 +35,7 @@
     }
 
     &--right {
-      position: absolute;
-      bottom: 0;
-      right: 0;
+      @include pos(absolute, $r: 0, $b: 0);
       text-align: end;
       width: 85%;
       padding-right: 15px;
@@ -53,8 +51,7 @@
 
     &--left {
       @media (max-width: $mobile) {
-        width: 262px;
-        height: 152px;
+        @include size(262px, 152px);
       }
     }
 
@@ -65,8 +62,7 @@
       max-width: none;
 
       @media (max-width: $mobile) {
-        width: 242px;
-        height: 295px;
+        @include size(242px, 295px);
         max-width: auto;
         top: -30px;
       }
@@ -77,8 +73,7 @@
       z-index: 1;
 
       @media (max-width: $mobile) {
-        width: 260px;
-        height: 163px;
+        @include size(260px, 163px);
         top: -50px;
         margin-top: 0%;
         z-index: 3;

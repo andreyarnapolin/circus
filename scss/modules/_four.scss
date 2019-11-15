@@ -53,76 +53,50 @@
   }
 
   &__wall {
-    width: 665px;
-    height: 415px;
-    position: relative;
-    right: 0;
+    @include size(665px, 415px);
+    @include pos(relative, $r: 0);
 
     @media (max-width: $mobile) {
       margin-bottom: 45px;
-      width: 290px;
-      height: 848px;
+      @include size(290px, 848px);
     }
   }
 
   &__image {
     position: absolute;
     &--left {
-      top: 0;
-      left: 0;
-      z-index: 1;
+      @include pos($t: 0, $l: 0, $z: 1);
 
       @media (max-width: $mobile) {
-        width: 257px;
-        height: 269px;
-        top: auto;
-        left: auto;
-        right: 0;
-        bottom: 0;
+        @include size(257px, 269px);
+        @include pos($t: auto, $l: auto, $r: 0, $b: 0);
       }
     }
 
     &--center {
-      top: 75px;
-      left: 140px;
-      z-index: 2;
+      @include pos($t: 75px, $l: 140px, $z: 2);
 
       @media (max-width: $mobile) {
-        width: 258px;
-        height: 158px;
-        z-index: 1;
-        left: 0;
-        top: 0;
+        @include size(258px, 158px);
+        @include pos($t: 0, $l: 0, $z: 1);
       }
     }
 
     &--right {
-      z-index: 3;
-      right: 0;
+      @include pos($r: 0, $z: 3);
 
       @media (max-width: $mobile) {
-        width: 258px;
-        height: 361px;
-        right: auto;
-        left: 0;
-        top: 259px;
-        z-index: 1;
+        @include size(258px, 361px);
+        @include pos($r: auto, $t: 259px, $l: 0, $z: 1);
       }
     }
 
     &--bottom {
-      bottom: 0;
-      left: 0;
-      z-index: 3;
+      @include pos($b: 0, $l: 0, $z: 3);
 
       @media (max-width: $mobile) {
-        width: 257px;
-        height: 150px;
-        bottom: auto;
-        left: auto;
-        right: 0;
-        top: 130px;
-        z-index: 2;
+        @include size(257px, 150px);
+        @include pos($b: auto, $t: 130px, $l: auto, $r: 0, $z: 2);
       }
     }
   }

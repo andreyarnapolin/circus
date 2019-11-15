@@ -13,10 +13,7 @@
 .main {
   color: #fff;
   &__socials {
-    //display: flex;
-    //align-items: flex-end;
-    position: absolute;
-    bottom: 50px;
+    @include pos(absolute, $b: 50px);
     font: 400 16px/20px $merri;
 
     @media (max-width: $mobile) {
@@ -26,7 +23,7 @@
   }
 
   &__info {
-    margin-right: -40px;
+    width: 200px;
     position: relative;
     z-index: 99;
     @media (max-width: $mobile) {
@@ -52,14 +49,14 @@
 
   &__facebook {
     fill: #fff;
-    position: relative;
+    @include pos(relative, $l: 215px);
     @include size(30px, 30px);
-    left: 215px;
     transition: all 0.3s;
 
     @media (max-width: $mobile) {
       @include size(19px, 19px);
       left: auto;
+      z-index: 99;
     }
 
     &:hover {
@@ -68,14 +65,14 @@
   }
   &__instagram {
     fill: #fff;
-    position: relative;
+    @include pos(relative, $l: 265px);
     @include size(30px, 30px);
-    left: 265px;
     transition: all 0.3s;
 
     @media (max-width: $mobile) {
       @include size(19px, 19px);
       left: auto;
+      z-index: 99;
       margin-left: 16px;
     }
 

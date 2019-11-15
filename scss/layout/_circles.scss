@@ -156,11 +156,22 @@
   &__left {
     position: absolute;
     overflow: hidden;
+    animation: resize 3s infinite;
   }
 
   &__right {
     position: absolute;
     overflow: hidden;
     z-index: 10;
+    animation: resize 3s infinite;
+  }
+}
+
+@keyframes resize {
+  90% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
   }
 }
