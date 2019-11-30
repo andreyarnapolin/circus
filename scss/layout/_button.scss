@@ -4,6 +4,7 @@
   background: var(--red);
   font: 400 18px/21px $yeseva;
   text-decoration: none;
+  border: 1px solid var(--red);
 
   @media (max-width: $desktop) {
     padding: 17px 75px;
@@ -13,7 +14,7 @@
 
   &:hover {
     border: 1px solid #fff;
-
+    transition: all 0.3s;
     @media (max-width: $desktop) {
       border: none;
     }

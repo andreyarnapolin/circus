@@ -2,7 +2,7 @@
   background: url(../images/frame1-bg.png) no-repeat;
   background-size: auto 100vh;
   width: 100vw;
-  background-position: -60px 60px;
+  background-position: 0 60px;
 
   @media (max-width: $desktop) {
     background: var(--red);
